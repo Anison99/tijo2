@@ -1,0 +1,55 @@
+Dodawanie książki do katalogu:
+
+Krok 1: Dodaj nową książkę do katalogu.
+Krok 2: Zweryfikuj, czy książka została dodana pomyślnie.
+Krok 3: Spróbuj zarezerwować dodaną książkę.
+Krok 4: Zweryfikuj, czy status książki zmienił się na "zarezerwowana".
+Rezerwacja książki:
+
+Krok 1: Dodaj nową książkę do katalogu.
+Krok 2: Zarezerwuj książkę.
+Krok 3: Zweryfikuj, czy status książki zmienił się na "zarezerwowana".
+Usuwanie książki z katalogu:
+
+Krok 1: Dodaj nową książkę do katalogu.
+Krok 2: Usuń książkę z katalogu.
+Krok 3: Zweryfikuj, czy książka została usunięta.
+Krok 4: Sprawdź historię wypożyczeń, czy usunięcie książki zostało uwzględnione.
+Przedłużenie rezerwacji:
+
+Krok 1: Dodaj nową książkę do katalogu.
+Krok 2: Zarezerwuj książkę.
+Krok 3: Przedłuż rezerwację książki.
+Krok 4: Zweryfikuj, czy przedłużenie rezerwacji wpłynęło na poprawny status dostępności książki.
+Dodawanie i rezerwacja kolejnych książek:
+
+Krok 1: Dodaj kilka nowych książek do katalogu.
+Krok 2: Zweryfikuj, czy wszystkie książki zostały dodane pomyślnie.
+Krok 3: Zarezerwuj kilka książek.
+Krok 4: Zweryfikuj, czy statusy wszystkich zarezerwowanych książek są poprawne.
+Usuwanie książki a brak historii wypożyczeń:
+
+Krok 1: Dodaj nową książkę do katalogu.
+Krok 2: Usuń książkę z katalogu.
+Krok 3: Sprawdź historię wypożyczeń, czy usunięcie książki nie wpłynęło na historię.
+Przedłużenie rezerwacji przed rezerwacją:
+
+Krok 1: Dodaj nową książkę do katalogu.
+Krok 2: Przedłuż rezerwację książki, która nie została jeszcze zarezerwowana.
+Krok 3: Zweryfikuj, czy przedłużenie rezerwacji nie miało wpływu na status dostępności książki.
+Rezerwacja i usunięcie książki:
+
+Krok 1: Dodaj nową książkę do katalogu.
+Krok 2: Zarezerwuj książkę.
+Krok 3: Usuń zarezerwowaną książkę.
+Krok 4: Zweryfikuj, czy usunięcie zarezerwowanej książki uwzględniono poprawnie.
+Próba rezerwacji nieistniejącej książki:
+
+Krok 1: Spróbuj zarezerwować książkę, która nie istnieje w katalogu.
+Krok 2: Zweryfikuj, czy system nie pozwala na rezerwację nieistniejącej książki.
+Dodawanie i usuwanie książki bez rezerwacji:
+
+Krok 1: Dodaj nową książkę do katalogu.
+Krok 2: Zweryfikuj, czy książka została dodana pomyślnie.
+Krok 3: Usuń książkę z katalogu.
+Krok 4: Zweryfikuj, czy książka została usunięta bez konieczności rezerwacji.

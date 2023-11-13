@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Home</title>
+</head>
+<body>
+<h2>Welcome to User Home!</h2>
+
+<h3>Your Book List:</h3>
+<table border="1">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Author</th>
+    <th>ISBN</th>
+    <th>Reserved</th>
+  </tr>
+  </thead>
+  <tbody>
+  <!-- Loop through the list of books and display each book -->
+  <tr th:each="book : ${books}">
+    <td th:text="${book.id}"></td>
+    <td th:text="${book.title}"></td>
+    <td th:text="${book.author}"></td>
+    <td th:text="${book.isbn}"></td>
+    <td th:text="${book.reserved}"></td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>
