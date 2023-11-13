@@ -15,27 +15,29 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-    private final UserService userService;
+    @Lazy
+    @Autowired
+    private UserRepository userRepository;
+
+    @Lazy
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     @Autowired
-    public SecurityConfig(@Lazy UserService userService) {
-        this.userService = userService;
-    }
+    private UserService userService;
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/api/register").permitAll()
-                .antMatchers("/register").permitAll()
-                .antMatchers("/h2-console/**").permitAll()  // Pozwól na dostęp do H2 Console
-                .anyRequest().authenticated()
+                .antMatchers("/register", "/login").permitAll()
+                .antMatchers("/books").authenticated()
                 .and()
                 .formLogin().loginPage("/login").permitAll()
                 .and()
                 .logout().permitAll();
+        http.headers().frameOptions().disable();
     }
-
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
@@ -47,4 +49,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return new BCryptPasswordEncoder();
     }
 }
+
+
 
